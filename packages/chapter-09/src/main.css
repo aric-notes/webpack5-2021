@@ -1,0 +1,5 @@
+.title {
+  color: red;
+  user-select: none;
+  transition: all 0.3s;
+}
