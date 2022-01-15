@@ -7,22 +7,22 @@ module.exports = {
   },
   module: {
     rules: [
-{
-  test: /.css$/,  // 正则，匹配将要处理的文件(filename)类型
-  use: [
-    'style-loader',
-    'css-loader', {
-      loader: 'postcss-loader',
-      options: {
-        postcssOptions: {
-          plugins: [
-            'postcss-preset-env'
-          ]
-        }
-      }
-    }
-  ]
-},
+      {
+        test: /.css$/,  // 正则，匹配将要处理的文件(filename)类型
+        use: [
+          'style-loader',
+          'css-loader', {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'postcss-preset-env'
+                ]
+              }
+            }
+          }
+        ]
+      },
       {
         test: /.less$/,  // 正则，匹配将要处理的文件(filename)类型
         use: ['style-loader', 'css-loader', 'less-loader']
